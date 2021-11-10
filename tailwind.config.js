@@ -25,6 +25,7 @@ module.exports = {
     extend: {
       colors: {
         "lendNation-green": "#84bd00",
+        "lendNation-blue": "#003057",
         "lendNation-header-gray": "#978a82",
         "lendNation-header-mobile-blue": "#003057",
         "lendNation-footer-gray": "#d3d0c7",
