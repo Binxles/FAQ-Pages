@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+
+
+/* Header Styline */
+
+.topnav #myLinks {
+  display: none;
+}
+.headerLink {
+  @apply text-xl border-b-2 border-lendNation-header-gray text-lendNation-header-gray hover:border-b-0;
+}
+
+
+/* Body Styling */
+
+body {
+  @apply bg-gray-50;
+}
+
+h1 {
+  @apply text-3xl font-bold;
+}
+
+h2 {
+  @apply text-2xl font-bold;
+}
+
+h3 {
+  @apply text-lg font-bold;
+}
+
+h4 {
+  @apply text-lg font-bold;
+}
+
+.hero {
+  background-position: center;
+}
+
+.centered-container {
+  @apply mx-auto px-5 md:px-14 max-w-screen-xl;
+}
+
+.skeleton {
+  @apply bg-gray-300 animate-pulse rounded-sm;
+}
+
+h2.section-header {
+  @apply border-b pb-2 mb-3;
+}
+
+.section {
+  @apply mt-8 mb-16;
+}
+
+.btn {
+  @apply border px-4 py-2 rounded transform hover:-translate-y-1 ease-in-out transition-all cursor-pointer hover:shadow-lg  text-center focus:outline-none flex gap-2 items-center justify-center;
+}
+
+
+.btn-primary {
+  @apply text-white focus:ring-2 focus:bg-red-900;
+}
+
+.btn-secondary {
+  @apply hover:bg-white focus:ring-2 focus:bg-red-100;
+}
+
+.btn-link {
+  @apply hover:bg-gray-100 focus:ring-2 focus:bg-gray-100;
+}
+
+.error-text {
+  padding-bottom: 10px;
+  color: red;
+}
+
+
+
+@tailwind utilities;

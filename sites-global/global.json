@@ -1,0 +1,53 @@
+{
+    "name": "QC Holdings - LendNation FAQs",
+    "sandbox-accountId": "2669971",
+    "prod-accountId": "1845510",
+    "googleApiKey": "AIzaSyDZNQlSlEIkFAct5VzUtsP4dSbvOr2bE18",
+    "liveApiKey": "15aaa773da3385f3a402df998977e97a",
+    "header": {
+        "links": [
+            {
+                "text": "About Us",
+                "href": "https://www.lendnation.com/about-us"
+            },
+            {
+                "text": "Locations",
+                "href": "https://www.lendnation.com/location/"
+            },
+            {
+                "text": "Blog",
+                "href": "https://www.lendnation.com/blog"
+            },
+            {
+                "text": "Contact Us",
+                "href": "https://www.lendnation.com/contact-us"
+            },
+            {
+                "text": "Sign In",
+                "href": "https://www.lendnation.com/myaccount/#!/alreadyAcc"
+            },
+            {
+                "text": "Apply Now",
+                "href": "https://www.lendnation.com/MyAccount/#!/registration"
+            }
+        ]
+    },
+    "footer": {
+        "links": [
+            {
+                "text": "FOR PAYDAY LOANS OR CASH ADVANCES IN CANADA VISIT 310-LOAN",
+                "href": "https://www.310loan.com/"
+            },
+            {
+                "text": "FIND NEAREST STORE",
+                "href": "https://www.lendnation.com/location/search"
+            },
+            {
+                "text": "SITE MAP",
+                "href": "https://www.lendnation.com/sitemap"
+            }
+        ],
+        "notice": "Customer Notice: There are a wide variety of financial products available in the marketplace, so your choice of such products should match your financial needs. Short-term, small dollar credit used over a long period of time can be expensive. Certain restrictions may apply, including state database and credit underwriting standards and limitations. Visit a LendNation store or contact us for details.",
+        "copyright": "Content Copyright © 2021, QC Holdings, Inc. All rights reserved."
+    }
+}

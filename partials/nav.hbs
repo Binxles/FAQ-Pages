@@ -1,0 +1,52 @@
+<div class="topnav">
+    <div class="p-5 flex items-center justify-between gap-x-3">
+        <div class="inline-flex items-center">
+            <a href="/" class="hidden md:block">
+                <img src="images/lendnation.svg" height="40" width="282">
+            </a>
+            <a href="/" class="block md:hidden">
+                <img src="images/lendnation.svg" height="24" width="168">
+            </a>
+        </div>
+        <div class="hidden lg:flex grid gap-x-10">
+            <a href="#" class="headerLink">About Us</a>
+            <a href="#" class="headerLink">Locations</a>
+            <a href="#" class="headerLink">Blog</a>
+            <a href="#" class="headerLink">Contact Us</a>
+            <a href="#" class="headerLink">Sign In</a>
+        </div>
+        <div class="flex items-center gap-x-7">
+            <button class="flex w-auto px-8 py-2 my-2 text-base font-medium text-white bg-lendNation-green rounded-3xl focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-gray-700">
+                APPLY NOW
+            </button>
+            <a href="javascript:void(0);" class="hamburger lg:hidden" onclick="hamburger()">
+                <svg class="lg:hidden" viewBox="0 0 100 80" width="25" height="25">
+                    <rect width="90" height="10"></rect>
+                    <rect y="30" width="90" height="10"></rect>
+                    <rect y="60" width="90" height="10"></rect>
+                </svg>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="links-mobile-view px-5 py-3 bg-lendNation-header-mobile-blue text-white text-right" id="myLinks">
+        <div><a href="#about">About Us</a></div>
+        <div><a href="#locations">Locations</a></div>
+        <div><a href="#blog">Blog</a></div>
+        <div><a href="#contact-us">Contact Us</a></div>
+        <div><a href="#sign-in">Sign In</a></div>
+        <div><a href="#apply-now">Apply Now</a></div>
+    </div>
+</div>
+
+<script>
+    function hamburger() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+    }
+</script>

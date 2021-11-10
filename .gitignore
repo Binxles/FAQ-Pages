@@ -1,0 +1,9 @@
+/.artifact-output
+/public
+/localData
+/node_modules
+package-lock.json
+/sites-rendered-output
+cli
+cli.exe
+/.idea

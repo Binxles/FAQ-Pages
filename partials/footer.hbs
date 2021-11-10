@@ -1,0 +1,32 @@
+<footer class="w-full bg-lendNation-footer-gray">
+    <div class="centered-container py-10">
+        <nav class="space-y-3">
+            <div class="space-y-2">
+                <div class="images flex gap-x-4">
+                    <a href="https://infinalliance.org/">
+                        <img src="/images/infin.jpeg" width="118" height="48">
+                    </a>
+                    <a href="https://seal.godaddy.com/verifySeal?sealID=i9fW2HBLvI60ZMCBkVn6HTtn2fp9UXY1Ox2zlzTbqf1hSCuuvVwtIYmqjdyJ">
+                        <img src="/images/godaddy.png" width="197" height="48">
+                    </a>
+                </div>
+                <div class="flex flex-col text-lendNation-footer-link font-bold text-sm">
+                    {{#each global.footer.links}}
+                        <div>
+                            <a href="{{href}}" class="hover:underline">{{text}}</a>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+            <div>
+                <div class="text-xs">
+                    {{global.footer.notice}}
+                </div>
+            </div>
+            <div class="text-lendNation-footer-copyright font-semibold">
+                {{global.footer.copyright}}
+            </div>
+        </nav>
+    </div>
+
+</footer>

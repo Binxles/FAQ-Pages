@@ -1,0 +1,52 @@
+---
+{
+    "stream": {
+        "$id": "faq-pages",
+        "source": "knowledgeGraph",
+        "destination": "pages",
+        "filter" : {
+            "entityTypes": [
+                "faq"
+            ]
+        },
+        "fields": [
+            "id", 
+            "uid", 
+            "meta",
+            "question",
+            "answer",
+            "slug"
+        ], 
+        "localization": {
+            "locales": ["en"]
+        }
+    },
+    "urlFormat": "{{slug}}"
+}
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {{>head }}
+        <title>QC Holdings FAQs - {{question}}</title>
+        {{!-- {{>schema}} --}}
+        <link rel="shortcut icon" type="image/jpg" href="/images/yext-favicon.png"/>
+    </head>
+    <body>      
+            <div class="w-full">
+                {{>nav}}
+                {{!-- <div class="centered-container">
+                    {{>backbutton}}
+                </div> --}}
+                {{>hero}}
+                <div class="centered-container">
+                    <div class="h-60">
+                        <div class="section">
+                            <h1>[Replace Me]</h1>
+                        </div>
+                    </div>
+                </div>
+                {{>footer}}
+            </div>
+    </body> 
+</html>
