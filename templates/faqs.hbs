@@ -30,15 +30,16 @@
         {{>head }}
         <title>QC Holdings FAQs - {{question}}</title>
         {{!-- {{>schema}} --}}
-        <link rel="shortcut icon" type="image/jpg" href="/images/yext-favicon.png"/>
+        <link rel="shortcut icon" type="image/png" href="/images/local.lendnation.com.png"/>
     </head>
     <body>      
             <div class="w-full">
                 {{>nav}}
-                {{>hero}}
+                {{>hero text=question}}
                 <div class="centered-container">
-                    <div class="section h-60">
-                        <div class="text-3xl font-semibold">[Replace Me]</div>
+                    <div class="section">
+                        <div class="text-2xl font-semibold">Answer</div>
+                        <div class="text-xl">{{convertRTFToHTML answer}}</div>
                     </div>
                 </div>
             </div>
