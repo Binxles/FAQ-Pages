@@ -1,5 +1,5 @@
 <div class="topnav">
-    <div class="p-5 flex items-center justify-between gap-x-3">
+    <div class="p-12 flex items-center justify-between gap-x-3">
         <div class="inline-flex items-center">
             <a href="/" class="hidden md:block">
                 <img src="images/lendnation.svg" height="40" width="282">
@@ -8,7 +8,7 @@
                 <img src="images/lendnation.svg" height="24" width="168">
             </a>
         </div>
-        <div class="hidden lg:flex grid gap-x-10">
+        <div class="hidden lg:flex gap-x-10">
             {{#each global.header.links}}
                 {{!-- Add everything except "Apply Now" link from global.header.links array --}}
                 {{#unless @last}}
@@ -20,7 +20,7 @@
             {{#each global.header.links}}
                 {{!-- Add last link, aka "Apply Now", from global.header.links array --}}
                 {{#if @last}}
-                    <button class="flex w-auto px-8 py-2 my-2 text-base font-medium text-white bg-lendNation-green rounded-3xl focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-gray-700">
+                    <button class="px-8 py-2 text-xl uppercase font-semibold text-white bg-lendNation-green rounded-3xl border-2 border-lendNation-green hover:bg-white hover:text-lendNation-blue hover:border-lendNation-green hover:border-2">
                         <a href="{{href}}">{{text}}</a>
                     </button>
                 {{/if}}
