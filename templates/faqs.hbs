@@ -28,7 +28,7 @@
 <html lang="en">
     <head>
         {{>head }}
-        <title>QC Holdings FAQs - {{question}}</title>
+        <title>LENDNATION FAQs - {{question}}</title>
         {{!-- {{>schema}} --}}
         <link rel="shortcut icon" type="image/png" href="/images/local.lendnation.com.png"/>
     </head>
@@ -38,12 +38,12 @@
                 {{>hero text=question}}
                 <div class="centered-container">
                     <div class="section">
-                        <div class="text-2xl font-semibold">Answer</div>
+                        <div class="text-2xl font-semibold text-lendNation-body-gray">Answer</div>
                         <div class="text-xl">{{convertRTFToHTML answer}}</div>
                     </div>
                 </div>
             </div>
-           <! –– <div class="w-full bg-lendNation-blue">
+         <div class="w-full bg-lendNation-blue">
                 <div class="centered-container">
                     <div class="section h-60 text-white">
                         <div class="text-3xl font-semibold">[Replace Me]</div>
@@ -57,7 +57,7 @@
                     </div>
                 </div>
             </div>
-            ––>
+          
             {{>footer}}
     </body> 
 </html>
