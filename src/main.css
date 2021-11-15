@@ -19,6 +19,11 @@ body {
   font-color: #797a7a;
   font-size: 22px;
 }
+.text-2xl {
+    font-size: 22px;
+    line-height: 2rem;
+    font-color: #797a7a;
+}
 
 .hero {
   background-position: center;
