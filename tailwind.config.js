@@ -28,6 +28,7 @@ module.exports = {
         "lendNation-blue": "#003057",
         "lendNation-header-gray": "#978a82",
         "lendNation-header-mobile-blue": "#003057",
+        "lendNation-body-gray": "#797a7a",
         "lendNation-footer-gray": "#d3d0c7",
         "lendNation-footer-link": "#003057",
         "lendNation-footer-copyright": "#666767"
