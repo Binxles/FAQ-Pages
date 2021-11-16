@@ -19,6 +19,14 @@ body {
   font-color: #797a7a;
   font-size: 22px;
 }
+
+p {
+  font-family: Avenir,Segoe UI,Verdana,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-color: #797a7a;
+  font-size: 22px;
+}
+  
+
 .text-2xl {
     font-size: 22px;
     line-height: 2rem;
