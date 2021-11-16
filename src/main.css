@@ -20,6 +20,10 @@ body {
   font-size: 22px;
 }
 
+.section.h-60 {
+  height:35px
+}
+
 p {
   font-family: Avenir,Segoe UI,Verdana,Helvetica Neue,Helvetica,Arial,sans-serif;
   color: #797a7a;
