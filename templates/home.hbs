@@ -54,8 +54,9 @@
             <div class="centered-container">
                 <div class="section h-60 text-white">
                     <div class="text-3xl font-semibold">HOW LENDNATION WORKS</div>
-                    <li> Question </li>
-                    answer
+                    <li> {{>hero text=question}} </li>
+                    <div class="section">
+                        <div class="text-xl text-lendNation-body-gray">{{convertRTFToHTML answer}}</div>
                 </div>
             </div>
         </div>
