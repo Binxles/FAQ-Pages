@@ -1,5 +1,31 @@
 ---
 {
+    "stream": {
+        "$id": "faq-pages",
+        "source": "knowledgeGraph",
+        "destination": "pages",
+        "filter" : {
+            "entityTypes": [
+                "faq"
+            ]
+        },
+        "fields": [
+            "id", 
+            "uid", 
+            "meta",
+            "question",
+            "answer",
+            "slug"
+        ], 
+        "localization": {
+            "locales": ["en"]
+        }
+    },
+    "urlFormat": "{{slug}}"
+}
+
+---
+{
     "urlFormat" : "index.html"
 }
 ---
