@@ -1,20 +1,23 @@
 ---
 {
     "stream": {
-        "$id": "faq-pages",
+        "$id": "state-pages",
         "source": "knowledgeGraph",
         "destination": "pages",
         "filter" : {
             "entityTypes": [
-                "faq"
+                "ce_state"
             ]
         },
         "fields": [
             "id", 
             "uid", 
             "meta",
-            "question",
-            "answer",
+            "name",
+            "c_relatedDocuments.name",
+            "c_relatedDocuments.websiteUrl",
+            "c_relatedFAQs.question",
+            "c_relatedFAQs.answer",
             "slug"
         ], 
         "localization": {
@@ -28,18 +31,25 @@
 <html lang="en">
     <head>
         {{>head }}
-        <title>LENDNATION FAQs - {{question}}</title>
+        <title>LENDNATION Disclosures - {{name}}</title>
         {{!-- {{>schema}} --}}
         <link rel="shortcut icon" type="image/png" href="/images/local.lendnation.com.png"/>
     </head>
     <body>      
             <div class="w-full">
                 {{>nav}}
-                {{>hero text=Disclosures}}
                 <div class="centered-container">
+                    {{>hero text="Disclosures"}}
                     <div class="section">
-                        <div class="text-2xl font-semibold text-lendNation-body-gray">Answer</div>
-                        <div class="text-xl text-lendNation-body-gray">{{convertRTFToHTML answer}}</div>
+                        {{#each c_relatedDocuments}}
+                            <a class="text-xl text-lendNation-body-gray underline" href="{{websiteUrl.url}}" target="_blank">{{name}}</a>
+                        {{/each}}
+                    </div>
+                    {{>hero text="Frequently Asked Questions"}}
+                    <div class="section">
+                        {{#each c_relatedFAQs}}
+                            <div class="text-xl text-lendNation-body-gray underline">{{question}}</div>
+                        {{/each}}
                     </div>
                 </div>
             </div>
